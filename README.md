@@ -15,9 +15,12 @@
 - **策略卡牌对战 (GameScene)**：石头剪刀布主题的回合制卡牌博弈，包含 6 种技能牌（石之力量/布之守护/剪之锋芒/临阵换策/两极反转），搭配 **DQN 深度强化学习神经网络 AI** 作为对手
 - **登录与存档系统**：完整的账号注册/登录流程，JSON 本地持久化存储
 
-视频展示：[https://www.bilibili.com/video/BV1awNE6pEnN](https://www.bilibili.com/video/BV1awNE6pEnN) 
+---
+
+视频展示：[https://www.bilibili.com/video/BV1awNE6pEnN](https://www.bilibili.com/video/BV1awNE6pEnN)  
 
 游玩方式：解压Proj.zip文件夹并运行其中的ClassDesign.exe
+
 ---
 
 ## 目录
