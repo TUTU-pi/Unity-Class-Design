@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4345cc53b786734cb4eca0df7e702ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OpenTime: 3
+  OpenTime: 10
   AudioOpen: {fileID: 8300000, guid: 0b5cb7471b5c04d53ad9211a037a15bd, type: 3}
   AudioClose: {fileID: 8300000, guid: 1c882c9bd2dd74915bcdcd1859c40a19, type: 3}
 --- !u!1001 &188769444

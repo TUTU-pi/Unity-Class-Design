@@ -1,4 +1,4 @@
-# Unity 多合一游戏合集
+># Unity 多合一游戏合集
 
 > **南昌大学虚拟现实课程设计** | 基于 Unity 2022.3.62f3c1 | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -15,7 +15,7 @@
 - **策略卡牌对战 (GameScene)**：石头剪刀布主题的回合制卡牌博弈，包含 6 种技能牌（石之力量/布之守护/剪之锋芒/临阵换策/两极反转），搭配 **DQN 深度强化学习神经网络 AI** 作为对手
 - **登录与存档系统**：完整的账号注册/登录流程，JSON 本地持久化存储
 
-视频展示：暂无
+视频展示：[https://www.bilibili.com/video/BV1awNE6pEnN](https://www.bilibili.com/video/BV1awNE6pEnN)
 ---
 
 ## 目录
@@ -60,8 +60,6 @@ git clone https://github.com/TUTU-pi/Unity-Class-Design.git
 | 3DGame     | `Assets/Scenes/3DGame.unity`     | 3D 探索主场景                  |
 | ShootGame  | `Assets/Scenes/ShootGame.unity`  | 第一人称射击战场               |
 | GameScene  | `Assets/Scenes/GameScene.unity`  | 卡牌对战                       |
-
-<!-- 插入 Unity Editor 中 Scenes 文件夹的截图 -->
 
 
 
@@ -165,8 +163,8 @@ git clone https://github.com/TUTU-pi/Unity-Class-Design.git
 - 物资持续自转，方便玩家辨识
 
 
+<img width="1230" height="694" alt="59256031-c1d4-4517-b031-b32e869a2b3e" src="https://github.com/user-attachments/assets/2f344cbd-7c9e-452a-80eb-2daed9678653" />
 
-<!-- 插入物资收集场景截图，展示物资旋转效果和 SupplyCnt 的 UI 显示 -->
 
 
 
@@ -178,16 +176,27 @@ git clone https://github.com/TUTU-pi/Unity-Class-Design.git
 - 打开后播放开门动画 + 音效
 - 需要玩家收集至少 4 个物资才能触发开门
 - 开门后倒计时自动关闭
+<img width="1234" height="693" alt="587b1b5f-cf05-4fbc-a8cf-24bd29ef68c1" src="https://github.com/user-attachments/assets/214fccc1-507d-4d67-ac55-ef9fce3136cd" />
+<img width="1233" height="695" alt="ab21854d-0678-44e8-905f-a52dae952d69" src="https://github.com/user-attachments/assets/dce8fe97-78d5-4f2f-95dc-7b908f4634f3" />
+
+
 
 **火焰机关 (`FireTrigger.cs`)**:
 
 - 鼠标悬浮按 E 或碰撞触发开关
 - 开启/关闭火焰效果，伴随循环音效
+<img width="1235" height="695" alt="2b015569-249c-4d94-97c7-a2d4dbe226b7" src="https://github.com/user-attachments/assets/c6127bbb-973d-4de2-93e1-18d2213cb383" />
+<img width="1223" height="694" alt="29c6f97f-cf1b-41e2-8b8d-e6876a3916d2" src="https://github.com/user-attachments/assets/963b18f1-a75e-438b-876a-793f59076812" />
+
 
 **传送标签 (`Tag.cs`)**:
 
 - 始终面向目标位置旋转
 - 鼠标悬停 + 左键点击将玩家传送至指定位置
+<img width="1232" height="695" alt="e6e82cda-0e8d-49ac-9459-4566ca3a62f7" src="https://github.com/user-attachments/assets/3b30325e-f4a1-4fb9-a2db-fe0126d3df7c" />
+<img width="1234" height="696" alt="8d8ff8df-f027-455d-917c-cbc8dab5a4f1" src="https://github.com/user-attachments/assets/f35f4948-aa5e-4243-9c83-e6905141f91d" />
+
+
 
 **自由相机 (`camera.cs`)**:
 
@@ -195,29 +204,34 @@ git clone https://github.com/TUTU-pi/Unity-Class-Design.git
 - Q/E 围绕目标点旋转
 - 滚轮缩放
 - Ctrl 加速
+<img width="1234" height="696" alt="2ea10788-13d1-482a-871e-5eed0cdd0b28" src="https://github.com/user-attachments/assets/22fb6032-b9bd-4fa6-8179-aedce5fd9ed3" />
+
+
+
 
 **场景切换 (`GameController.cs`)**:
 
 - 通用按钮点击加载指定场景
+<img width="1230" height="692" alt="632eae7b-d43a-4445-af14-67078c61f678" src="https://github.com/user-attachments/assets/2b9b97d2-89de-48bb-ad07-d1bdcf3fedeb" />
+
+
 
 **进入射击游戏入口 (`GetinShootGame.cs`)**:
 
 - 玩家碰撞到入口时显示提示面板
 - 离开时隐藏提示
-
-
-
-<!-- 插入 3DGame 场景全景截图，展示玩家视角、物资、门、火焰等元素 -->
-
+<img width="1229" height="694" alt="f11b4d56-d4fe-407a-8e2c-d29bee06fa33" src="https://github.com/user-attachments/assets/0c3f2dca-e2e4-48e8-a5e9-22c0bc97c9ad" />
+<img width="1233" height="691" alt="2ea52f24-16c3-4b8d-8351-485d9647a12c" src="https://github.com/user-attachments/assets/b2bdebb9-dac9-4486-b5f8-2389e0cac774" />
 
 
 ---
 
 ### 4. 射击战场 (ShootGame)
-
 **场景路径**: `Assets/Scenes/ShootGame.unity`
 
 独立的战斗竞技场场景，玩家需要消灭所有敌人来激活传送门。
+<img width="1230" height="686" alt="84b920b5-fdb7-4c49-a98a-4c823bb64cbd" src="https://github.com/user-attachments/assets/ee904cc6-5102-4094-b741-40bac3327185" />
+
 
 #### 4.1 敌人生成系统
 
@@ -255,8 +269,6 @@ git clone https://github.com/TUTU-pi/Unity-Class-Design.git
 
 
 
-<!-- 插入射击游戏战斗截图，展示击杀计数器 UI 和敌人在场景中追击玩家 -->
-
 
 
 #### 4.4 传送门系统
@@ -272,9 +284,8 @@ git clone https://github.com/TUTU-pi/Unity-Class-Design.git
   - 碰撞器变为可触发状态
 - **交互效果**：玩家触碰激活的传送门 → 重新加载当前场景（完整重置）
 
+<img width="1230" height="700" alt="67e56e0a-0e74-474f-99a6-352832af4d09" src="https://github.com/user-attachments/assets/8e71af2a-9a37-4789-8888-2314e029376a" />
 
-
-<!-- 插入传送门激活后的效果截图，展示彩色渐变发光 -->
 
 
 
@@ -284,6 +295,9 @@ git clone https://github.com/TUTU-pi/Unity-Class-Design.git
 
 - 鼠标悬停时显示提示 UI
 - 按下 E 键加载 `3DGame` 场景
+
+<img width="1228" height="696" alt="e7c9ffd1-c6d2-4bd2-9872-67bdb30e516b" src="https://github.com/user-attachments/assets/a027dfca-b7e8-4507-a5ee-a86c565462b2" />
+
 
 #### 4.6 玩家死亡处理
 
@@ -295,9 +309,7 @@ git clone https://github.com/TUTU-pi/Unity-Class-Design.git
 - 将 Rigidbody 速度归零
 - 等待 3 秒后自动加载 `3DGame` 场景
 
-
-
-<!-- 插入玩家死亡时的 UI 面板截图 -->
+<img width="1231" height="696" alt="5889298f-2338-4fdc-82c4-bd49aed233de" src="https://github.com/user-attachments/assets/077e6995-0190-4b4e-92d1-15eed1ec9b9d" />
 
 
 
@@ -359,25 +371,10 @@ git clone https://github.com/TUTU-pi/Unity-Class-Design.git
 - 结果面板（胜负 + 最终比分 + 重开按钮）
 - 暂停面板（Tab 键，可继续或退出）
 
-
-
-<!-- 插入卡牌对战主界面截图，展示全部 UI 元素：分数、回合、手牌、公共牌池、技能面板 -->
-
-
-
-#### 5.5 编辑器工具
-
-**核心脚本**: `Assets/Editor/SkillUISetup.cs`
-
-- 菜单栏 `Tools → Setup Skill Card UI` 一键创建技能面板 UI
-- 自动创建 SkillPanel（含技能卡牌槽位、跳过按钮、阶段文字）
-- 自动创建技能计数文本
-- 自动关联 SkillHandDisplay 到 GameManager
-- 支持重复运行（检测已有 UI 则重新连线）
-
-
-
-<!-- 插入 Editor 菜单截图，展示 Tools → Setup Skill Card UI 的位置 -->
+<img width="1234" height="696" alt="e51aad25-a989-4ca9-82c8-8848a0aad2f6" src="https://github.com/user-attachments/assets/92693f4d-310a-48de-b8dc-3a56b6c7ae93" />
+<img width="1235" height="695" alt="705d5f0a-b589-4e0d-b205-c9d32eb8b2df" src="https://github.com/user-attachments/assets/52a789ba-79f9-4065-b91c-275c6b0eeef3" />
+<img width="1236" height="693" alt="ebe3c9e4-0e8a-42f6-82b5-d6e111750f78" src="https://github.com/user-attachments/assets/ba89414e-aa2d-4064-bb59-77e38ad10942" />
+<img width="1233" height="697" alt="3fa3ef5b-492f-4747-8290-8aee5ca5570e" src="https://github.com/user-attachments/assets/2d42f671-7e1c-4694-8423-6f6665079f47" />
 
 
 
@@ -432,12 +429,6 @@ git clone https://github.com/TUTU-pi/Unity-Class-Design.git
 - 从可用动作的 Q 值中选择最大值动作（greedy）
 - 不可用动作会被过滤（如没有对应技能时不可选择该技能动作）
 - 支持 `debugLog` 开关输出详细 Q 值，便于调试
-
-
-
-<!-- 插入 AI 调试日志截图，展示 Console 中 Phase 1-4 的 Q 值输出 -->
-
-
 
 ---
 
@@ -542,10 +533,13 @@ Assets/
 - **南昌大学** — 虚拟现实课程教学与指导
 - **DQN 训练模型** — 基于 Python PyTorch 训练的深度强化学习权重，通过纯 C# 推理引擎集成到 Unity 中
 
-## 作者
-
-南昌大学 虚拟现实课程设计项目
-
+---
+## 版权与使用声明
+1. 本项目为**南昌大学课程设计作业**，仅用于学习与课程考核，**非商业用途**。
+2. 项目中部分模型、贴图、资源素材来源于课程授课老师提供的教学资源，**未经原授权允许，不保证通用开源商用资格**。
+3. 本项目开放的代码逻辑、脚本、自研架构遵循 **MIT License** 开源；
+   但**外部教学资源、素材、模型不参与开源商用**。
+4. 任何人使用本仓库内容时，**禁止将项目素材、资源用于商业盈利、二次分发与公开商用项目**，仅可用于个人学习参考。
+5. 若涉及资源版权问题，可联系本人进行下架处理。
 ---
 
-> 生成日期：2026-07-09
