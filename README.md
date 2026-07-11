@@ -16,6 +16,7 @@
 - **登录与存档系统**：完整的账号注册/登录流程，JSON 本地持久化存储
 
 视频展示：[https://www.bilibili.com/video/BV1awNE6pEnN](https://www.bilibili.com/video/BV1awNE6pEnN)
+游玩方式：解压Proj.zip文件夹并运行其中的ClassDesign.exe
 ---
 
 ## 目录
